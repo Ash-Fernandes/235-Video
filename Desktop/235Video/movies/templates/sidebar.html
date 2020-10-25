@@ -1,0 +1,17 @@
+<aside id="sidebar">
+
+    <header>
+        <h1>What's hot</h1>
+    </header>
+
+    {% for movie in selected_movies %}
+        <div id="movie-container">
+            <br>
+            <br>
+            <div id="movie-description">
+                <p>{{ movie.title }}, ({{ movie.release_year }}).</p>
+                <p>{{ movie.description }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</aside>
